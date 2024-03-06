@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HunnyPomodoro.Contracts\HunnyPomodoro.Contracts.csproj" />
+    <ProjectReference Include="..\HunnyPomodoro.Application\HunnyPomodoro.Application.csproj" />
+    <ProjectReference Include="..\HunnyPomodoro.Infrastructure\HunnyPomodoro.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

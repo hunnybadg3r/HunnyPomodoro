@@ -1,0 +1,22 @@
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\bin\Debug\net8.0\HunnyPomodoro.Domain.deps.json
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\bin\Debug\net8.0\HunnyPomodoro.Domain.dll
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\bin\Debug\net8.0\HunnyPomodoro.Domain.pdb
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.AssemblyInfoInputs.cache
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.AssemblyInfo.cs
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.csproj.CoreCompileInputs.cache
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.dll
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\obj\Debug\net8.0\refint\HunnyPomodoro.Domain.dll
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.pdb
+C:\Users\yu\Sync-Repos\HunnyPomodoro\HunnyPomodoro.Domain\obj\Debug\net8.0\ref\HunnyPomodoro.Domain.dll
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\bin\Debug\net8.0\HunnyPomodoro.Domain.deps.json
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\bin\Debug\net8.0\HunnyPomodoro.Domain.dll
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\bin\Debug\net8.0\HunnyPomodoro.Domain.pdb
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.AssemblyInfoInputs.cache
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.AssemblyInfo.cs
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.csproj.CoreCompileInputs.cache
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.dll
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\obj\Debug\net8.0\refint\HunnyPomodoro.Domain.dll
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\obj\Debug\net8.0\HunnyPomodoro.Domain.pdb
+C:\Users\yu\Sync-Repos\HunnyPomodoro 8\HunnyPomodoro.Domain\obj\Debug\net8.0\ref\HunnyPomodoro.Domain.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zkaH3zbHEWplsURcvmKKTFtXoSsXhGnMfXbqmQZpU4xkitvpNrSkYrM4r6mir7zc0/27TyUTlhyhvxVKHu8O2A==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\yu\\Sync-Repos\\HunnyPomodoro\\HunnyPomodoro.Api\\HunnyPomodoro.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
