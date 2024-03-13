@@ -1,0 +1,13 @@
+@host=https://localhost:7217
+@userId=29957128-C7BE-4071-AA64-1AD53F068E25
+
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJIdW5ueVBvbW9kb3JvLkRvbWFpbi5Vc2Vycy5WYWx1ZU9iamVjdHMuVXNlcklkIiwibmFtZSI6ImJhZGczciIsImp0aSI6IjI2MTI4Mjk5LTM0MGYtNDExMy05NGM4LTFlNGQ5OWU1ZTQ4NyIsImV4cCI6MTcxMDI5NjUxNCwiaXNzIjoiSHVubnlQb21vZG9ybyIsImF1ZCI6Ikh1bm55UG9tb2Rvcm8ifQ.4z2pXhLNUt8ARX36OGISLje7Iu-RJv8CibgE0gLTwJY
+
+
+POST {{host}}/users/{{userId}}/sessions
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "startTime": "2020-01-01T00:00:00.0000000Z"
+}

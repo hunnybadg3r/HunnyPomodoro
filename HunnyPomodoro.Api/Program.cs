@@ -1,17 +1,21 @@
+using HunnyPomodoro.Api;
 using HunnyPomodoro.Application;
 using HunnyPomodoro.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
+    .AddPresentation()
     .AddApplication()
-    .AddInfrastructure();
-
-builder.Services.AddControllers();
+    .AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
-app.UseHttpsRedirection();
-app.MapControllers();
-app.Run();
+    app.UseExceptionHandler("/error");
+    
+    app.UseHttpsRedirection();
+    app.UseAuthentication();
+    app.UseAuthorization();
+    app.MapControllers();
+    app.Run();
 

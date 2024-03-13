@@ -1,24 +1,20 @@
-# Hunny Pomodoro API
-
-## Auth
-
-### Register
+# Register
 
 ```js
 POST {{host}}/auth/register
 ```
 
-#### Register Request
+## Register Request
 
 ```json
 {
-  "Name": "badger",
+  "Name": "badg3r",
   "email": "hunnybadg3r@gmail.com",
-  "password": "badger333"
+  "password": "badg3r333"
 }
 ```
 
-#### Register Response
+## Register Response
 
 ```js
 200 OK
@@ -27,28 +23,28 @@ POST {{host}}/auth/register
 ```json
 {
   "id": "2e54106f-4be0-4b69-987a-8e37a8bcf10d",
-  "name": "badger",
+  "name": "badg3r",
   "email": "hunnybadg3r@gmail.com",
   "token": "eyJhb..hbbQ"
 }
 ```
 
-### Login
+# Login
 
 ```js
 POST {{host}}/auth/login
 ```
 
-#### Login Request
+## Login Request
 
 ```json
 {
   "email": "sometest@mail.com",
-  "password": "badger1232!"
+  "password": "badg3r1232!"
 }
 ```
 
-#### Login Response
+## Login Response
 
 ```js
 200 OK
@@ -57,7 +53,7 @@ POST {{host}}/auth/login
 ```json
 {
   "id": "2e54106f-4be0-4b69-987a-8e37a8bcf10d",
-  "name": "badger",
+  "name": "badg3r",
   "email": "sometest@mail.com",
   "token": "eyJhb..hbbQ"
 }

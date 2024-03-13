@@ -1,0 +1,7 @@
+@host=https://localhost:7217
+@userId=29957128-C7BE-4071-AA64-1AD53F068E25
+
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJIdW5ueVBvbW9kb3JvLkRvbWFpbi5Vc2Vycy5WYWx1ZU9iamVjdHMuVXNlcklkIiwibmFtZSI6ImJhZGczciIsImp0aSI6IjRhNjc0ODM5LWQ3ODctNGY3MC05MGExLTQxYTljYzQxYTI0YiIsImV4cCI6MTcxMDI5OTQ5OSwiaXNzIjoiSHVubnlQb21vZG9ybyIsImF1ZCI6Ikh1bm55UG9tb2Rvcm8ifQ.6p_TPF7LWOvdeoze55BYvI7BrX1-VTx2CR6l1Otibms
+
+Get {{host}}/users/{{userId}}/sessions
+Authorization: Bearer {{token}}

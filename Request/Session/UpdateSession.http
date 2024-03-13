@@ -1,0 +1,15 @@
+@host=https://localhost:7217
+@userId=29957128-C7BE-4071-AA64-1AD53F068E25
+
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJIdW5ueVBvbW9kb3JvLkRvbWFpbi5Vc2Vycy5WYWx1ZU9iamVjdHMuVXNlcklkIiwibmFtZSI6ImJhZGczciIsImp0aSI6IjlkZDllNjMyLTc5ZDQtNGQyOC1hYzc1LWIxNmM4Y2NiMGVjZCIsImV4cCI6MTcxMDI5OTEzOSwiaXNzIjoiSHVubnlQb21vZG9ybyIsImF1ZCI6Ikh1bm55UG9tb2Rvcm8ifQ.8rQVlvSd2lv_Ggp3LvDgKLvWMLfGKrBXXYLxNLnZzZk
+
+
+POST {{host}}/users/{{userId}}/sessions/update
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "sessionId": "3F579A8C-FEBB-4B7D-BA08-D53B53264853",
+    "endTime": "2024-03-13T02:00:00.0000000Z",
+    "status": "Done"
+}
