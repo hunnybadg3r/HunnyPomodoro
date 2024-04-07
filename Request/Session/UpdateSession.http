@@ -1,15 +1,14 @@
 @host=https://localhost:7217
-@userId=29957128-C7BE-4071-AA64-1AD53F068E25
+@userId=81f3b88c-1a6f-48c1-bf2b-7ae301c8b922
 
-@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJIdW5ueVBvbW9kb3JvLkRvbWFpbi5Vc2Vycy5WYWx1ZU9iamVjdHMuVXNlcklkIiwibmFtZSI6ImJhZGczciIsImp0aSI6IjlkZDllNjMyLTc5ZDQtNGQyOC1hYzc1LWIxNmM4Y2NiMGVjZCIsImV4cCI6MTcxMDI5OTEzOSwiaXNzIjoiSHVubnlQb21vZG9ybyIsImF1ZCI6Ikh1bm55UG9tb2Rvcm8ifQ.8rQVlvSd2lv_Ggp3LvDgKLvWMLfGKrBXXYLxNLnZzZk
-
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJIdW5ueVBvbW9kb3JvLkRvbWFpbi5Vc2Vycy5WYWx1ZU9iamVjdHMuVXNlcklkIiwibmFtZSI6ImJhZGczciIsImp0aSI6ImI0NGY1MzZjLTkxYTUtNGMyMS04NGM3LTM3OTA3YWIwZjYwNCIsImV4cCI6MTcxMDc1MzYwOCwiaXNzIjoiSHVubnlQb21vZG9ybyIsImF1ZCI6Ikh1bm55UG9tb2Rvcm8ifQ.Ntz0Skyh3gW-kYRC2Qx_0uiEiKHgATu4iZU76F52oOw
 
 POST {{host}}/users/{{userId}}/sessions/update
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-    "sessionId": "3F579A8C-FEBB-4B7D-BA08-D53B53264853",
-    "endTime": "2024-03-13T02:00:00.0000000Z",
+    "sessionId": "AE0FF8C8-7CEA-49C5-B0A8-6DAC5F3308F8",
+    "endTime": "2024-03-18T17:19:00.0000000Z",
     "status": "Done"
 }

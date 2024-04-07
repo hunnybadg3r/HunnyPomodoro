@@ -1,4 +1,5 @@
 using HunnyPomodoro.Domain.Common.Models;
+using HunnyPomodoro.Domain.Session.Events;
 using HunnyPomodoro.Domain.Session.ValueObjects;
 using HunnyPomodoro.Domain.Users.ValueObjects;
 
@@ -8,36 +9,52 @@ public sealed class Session : AggregateRoot<SessionId, Guid>
 {
     public UserId UserId { get; }
     public DateTime StartTime { get; private set; }
-    public DateTime? EndTime { get; set; }
+    public DateTime EndTime { get; set; }
     public SessionStatus Status { get; set; }
-
+    public DateTime CreatedDateTime { get; private set; }
+    public DateTime UpdatedDateTime { get; set; }
 
     private Session(
-        SessionId sessionId,
-        UserId userId)
-        : base(sessionId)
+        SessionId id,
+        UserId userId,
+        DateTime startTime,
+        DateTime endTime,
+        SessionStatus status,
+        DateTime createdDateTime,
+        DateTime updatedDateTime)
+        : base(id)
     {
         UserId = userId;
+        StartTime = startTime;
+        EndTime = endTime;
+        Status = status;
+        CreatedDateTime = createdDateTime;
+        UpdatedDateTime = updatedDateTime;
     }
 
     public static Session Create(
         UserId userId,
         DateTime startTime)
     {
+        var utcNow = DateTime.UtcNow;
         var session = new Session(
             SessionId.CreateUnique(),
-            userId)
-            {
-                StartTime = startTime,
-                Status = SessionStatus.InProgress
-            };
+            userId,
+            startTime,
+            DateTime.MinValue,
+            SessionStatus.InProgress,
+            utcNow,
+            utcNow
+        );
+
+        session.AddDomainEvent(new SessionCreated(session));
 
         return session;
     }
 
     public void Update(Session session, DateTime endTime, SessionStatus status)
     {
-        session.EndTime = EndTime;
+        session.EndTime = endTime;
         session.Status = status;
     }
 

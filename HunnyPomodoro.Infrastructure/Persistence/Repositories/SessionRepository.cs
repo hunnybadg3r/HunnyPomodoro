@@ -1,6 +1,5 @@
 using HunnyPomodoro.Application.Common.Interfaces.Persistence;
 using HunnyPomodoro.Domain.Session;
-using Microsoft.EntityFrameworkCore;
 
 namespace HunnyPomodoro.Infrastructure.Persistence.Repositories;
 
@@ -19,9 +18,16 @@ public class SessionRepository : ISessionRepository
         _dbContext.SaveChanges();
     }
 
-    public List<Session> GetSessions(Guid userId)
+    public List<Session> GetSessions(Guid userId, SessionStatus? status = null)
     {
-        return _dbContext.Sessions.Where(d => d.UserId == userId).ToList();
+        var sessions = _dbContext.Sessions.Where(s => s.UserId == userId);
+
+        if (status is not null)
+        {
+            sessions = sessions.Where(s => s.Status == status);
+        }
+
+        return sessions.ToList();
     }
 
     public Session UpdateSession(
@@ -30,7 +36,6 @@ public class SessionRepository : ISessionRepository
         DateTime endTime,
         SessionStatus status)
     {
-        //var session = _dbContext.Sessions.AsEnumerable().SingleOrDefault(d => d.Id.Value == sessionId);
         var session = _dbContext.Sessions.Where(s => s.UserId == userId && s.Status != SessionStatus.Done)
             .AsEnumerable()
             .SingleOrDefault(d => d.Id.Value == sessionId);
@@ -40,6 +45,8 @@ public class SessionRepository : ISessionRepository
             session.EndTime = endTime;
             session.Status = status;
             
+            session.UpdatedDateTime = DateTime.UtcNow;
+
             _dbContext.SaveChanges();
         }
         else

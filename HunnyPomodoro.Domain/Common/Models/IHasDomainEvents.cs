@@ -1,5 +1,3 @@
-using HunnyPomodoro.Domain.Common.Models;
-
 namespace HunnyPomodoro.Domain.Common.Models;
 
 public interface IHasDomainEvents
