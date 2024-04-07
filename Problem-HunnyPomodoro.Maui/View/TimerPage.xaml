@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HunnyPomodoro.Maui.View.TimerPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:HunnyPomodoro.Maui.Controls"
+    xmlns:mcm="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+    xmlns:viewmodel="clr-namespace:HunnyPomodoro.Maui.ViewModel"
+    x:DataType="viewmodel:TimerPageViewModel"
+    Shell.NavBarIsVisible="True">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsEnabled="False" IsVisible="False" />
+    </Shell.BackButtonBehavior>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding LogoutCommand}" Text="Logout" />
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout Padding="30,0" Spacing="25">
+
+        <Button IsVisible="Collapse" />
+        <controls:RadialProgressBarControl
+            x:Name="RadialProgressBar"
+            Grid.Column="1"
+            Margin="10"
+            BarBackgroundColor="#d3c2fa"
+            BarThickness="10"
+            FontSize="48"
+            HeightRequest="200"
+            IsVisible="Visible"
+            Progress="{Binding Progress}"
+            TextColor="black"
+            WidthRequest="200" />
+
+        <Label Text="{Binding TimeCount}" />
+
+        <HorizontalStackLayout>
+            <Button Command="{Binding StartTimerCommand}" Text="Start" />
+            <Button Command="{Binding CancelTimerCommand}" Text="Cancel" />
+        </HorizontalStackLayout>
+
+        <Button Command="{Binding NavigateStatCommand}" Text="Navigate 📊" />
+    </VerticalStackLayout>
+
+</ContentPage>

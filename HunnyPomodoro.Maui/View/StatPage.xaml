@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HunnyPomodoro.Maui.View.StatPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:hpm="clr-namespace:HunnyPomodoro.Maui"
+    xmlns:mcm="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+    xmlns:model="clr-namespace:HunnyPomodoro.Maui.ViewModel.Model"
+    xmlns:viewmodel="clr-namespace:HunnyPomodoro.Maui.ViewModel"
+    x:DataType="viewmodel:StatPageViewModel">
+    <ContentView>
+        <Grid RowDefinitions="auto,*,*">
+            <Grid ColumnDefinitions="*,*,*">
+                <Label
+                    Grid.Column="0"
+                    FontFamily="OpenSansSemibold"
+                    HorizontalOptions="Center"
+                    Text="Sessions" />
+                <Label
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    Text="{Binding TotalMinutes}" />
+                <Label
+                    Grid.Column="2"
+                    FontFamily="OpenSansSemibold"
+                    FontSize="14"
+                    HorizontalOptions="Center"
+                    Text="Week" />
+            </Grid>
+            <Frame
+                Grid.Row="1"
+                BorderColor="White"
+                HeightRequest="350">
+                <mcm:ChartView Chart="{Binding Chart}" />
+            </Frame>
+            <CollectionView
+                Grid.Row="2"
+                HeightRequest="400"
+                ItemsSource="{Binding WeeklySessions}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:DisplaySession">
+                        <Frame
+                            Margin="5,-7"
+                            BorderColor="white"
+                            HeightRequest="65">
+                            <Grid
+                                Margin="2,-2"
+                                ColumnDefinitions="*,auto,*"
+                                RowDefinitions="*,auto">
+                                <Label FontFamily="OpenSansSemibold" Text="{Binding Mins}" />
+                                <Label
+                                    Grid.Column="1"
+                                    Margin="45,0,0,0"
+                                    FontSize="15"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding Date}"
+                                    TextColor="Gray" />
+                                <Label
+                                    Grid.Column="2"
+                                    Margin="0,0,5,0"
+                                    FontFamily="FaSolid"
+                                    FontSize="17"
+                                    HorizontalTextAlignment="End"
+                                    Text="{x:Static hpm:FaSolidIcons.Ellipsis}" />
+                                <BoxView
+                                    Grid.Row="1"
+                                    Grid.ColumnSpan="3"
+                                    Margin="0,2"
+                                    HeightRequest="1"
+                                    Color="LightGray" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ContentView>
+</ContentPage>

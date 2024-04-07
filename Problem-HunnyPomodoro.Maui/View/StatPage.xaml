@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HunnyPomodoro.Maui.View.StatPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mcm="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+    xmlns:viewmodel="clr-namespace:HunnyPomodoro.Maui.ViewModel"
+    Title="Stat"
+    x:DataType="viewmodel:StatPageViewModel">
+    <ScrollView>
+
+        <mcm:ChartView BackgroundColor="Black" Chart="{Binding Chart}" />
+
+        <!--<Button Command="{Binding GetSessionsCommand}" Text="Get Sessions" />-->
+
+    </ScrollView>
+</ContentPage>

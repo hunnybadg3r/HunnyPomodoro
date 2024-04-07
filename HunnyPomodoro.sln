@@ -3,23 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HunnyPomodoro.Api", "HunnyPomodoro.Api\HunnyPomodoro.Api.csproj", "{B9D805B3-8C5C-4C34-B52B-6B7347837449}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HunnyPomodoro.Api", "HunnyPomodoro.Api\HunnyPomodoro.Api.csproj", "{B9D805B3-8C5C-4C34-B52B-6B7347837449}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HunnyPomodoro.Application", "HunnyPomodoro.Application\HunnyPomodoro.Application.csproj", "{069522BA-4338-45DE-BE76-2ED0E5218BE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HunnyPomodoro.Application", "HunnyPomodoro.Application\HunnyPomodoro.Application.csproj", "{069522BA-4338-45DE-BE76-2ED0E5218BE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HunnyPomodoro.Contracts", "HunnyPomodoro.Contracts\HunnyPomodoro.Contracts.csproj", "{C8E30E4C-4E36-4F13-BC2A-71D5AB58EC1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HunnyPomodoro.Contracts", "HunnyPomodoro.Contracts\HunnyPomodoro.Contracts.csproj", "{C8E30E4C-4E36-4F13-BC2A-71D5AB58EC1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HunnyPomodoro.Domain", "HunnyPomodoro.Domain\HunnyPomodoro.Domain.csproj", "{E62D1DDC-50DE-4463-8DE7-AB19FFD324EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HunnyPomodoro.Domain", "HunnyPomodoro.Domain\HunnyPomodoro.Domain.csproj", "{E62D1DDC-50DE-4463-8DE7-AB19FFD324EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HunnyPomodoro.Infrastructure", "HunnyPomodoro.Infrastructure\HunnyPomodoro.Infrastructure.csproj", "{F24210F5-BFAC-437E-ADC2-50C903015DEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HunnyPomodoro.Infrastructure", "HunnyPomodoro.Infrastructure\HunnyPomodoro.Infrastructure.csproj", "{F24210F5-BFAC-437E-ADC2-50C903015DEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HunnyPomodoro.Maui", "HunnyPomodoro.Maui\HunnyPomodoro.Maui.csproj", "{D16BD997-EEC2-438A-ABDB-F13B5F4707D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B9D805B3-8C5C-4C34-B52B-6B7347837449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +41,17 @@ Global
 		{F24210F5-BFAC-437E-ADC2-50C903015DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F24210F5-BFAC-437E-ADC2-50C903015DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F24210F5-BFAC-437E-ADC2-50C903015DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16BD997-EEC2-438A-ABDB-F13B5F4707D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16BD997-EEC2-438A-ABDB-F13B5F4707D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16BD997-EEC2-438A-ABDB-F13B5F4707D1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D16BD997-EEC2-438A-ABDB-F13B5F4707D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16BD997-EEC2-438A-ABDB-F13B5F4707D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16BD997-EEC2-438A-ABDB-F13B5F4707D1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFE44DE6-54C1-4DEE-A36D-FE38CFD6172E}
 	EndGlobalSection
 EndGlobal
