@@ -1,10 +1,6 @@
 # HunnyPomodoro
 [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) Timer & Statistics App
 
-## A very rough mockup
-[<img src="https://i.imgur.com/XWmGyPs.png">](https://i.imgur.com/XWmGyPs.png)
-[<img src="https://i.imgur.com/qplTiT3.png">](https://i.imgur.com/qplTiT3.png)
-
 ## Introduction
 A toy project for studying various subjects.
 
@@ -18,13 +14,11 @@ A toy project for studying various subjects.
 	- Web API
 	- MAUI
 
-## Progress🛠️
-- [x] Project setup
-- [ ] Documentation
-	- [x] API
-	- [ ] Architecture
-	- [x] Domain
-- [x] Implement API
-	- [x] Auth
-	- [x] Pomodoro Session Log
-- [ ] Implement UI 
+## Architecture
+[<img src="https://i.imgur.com/Xu4l921.png">](https://i.imgur.com/Xu4l921.png)
+
+## Screenshots
+[<img src="https://i.imgur.com/341UQ1Z.png">](https://i.imgur.com/341UQ1Z.png)
+[<img src="https://i.imgur.com/1PIR26r.png">](https://i.imgur.com/1PIR26r.png)
+[<img src="https://i.imgur.com/Di1ADpX.gif">](https://i.imgur.com/Di1ADpX.gif)
+[<img src="https://i.imgur.com/wQOAIht.png">](https://i.imgur.com/wQOAIht.png)
