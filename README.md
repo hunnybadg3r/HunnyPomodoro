@@ -15,7 +15,7 @@ A toy project for studying various subjects.
 	- MAUI
 
 ## Architecture
-[<img src="https://i.imgur.com/y8dz3iY.png">](https://i.imgur.com/y8dz3iY.png)
+[<img src="https://i.imgur.com/wM1bY7t.png">](https://i.imgur.com/wM1bY7t.png)
 
 ## Screenshots
 [<img src="https://i.imgur.com/341UQ1Z.png">](https://i.imgur.com/341UQ1Z.png)
